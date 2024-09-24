@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <!-- Meta tags essenciais para definir a codificação de caracteres e a responsividade da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
-    <!-- Link para o arquivo CSS externo, onde o estilo da página será definido -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Cabeçalho da página com o título principal e um botão -->
-    
-        <h1 class="titulo">Gabriel Ladeia</h1>
-        <input type="button" value="Sobre Mim" class="btn-sobre-mim">
-    <br>
+    <h1 class="titulo">Gabriel Ladeia</h1>
+    <div class="btn-container">
+        <button class="btn-topo" id="sobreButton" type="button">Sobre mim</button>
+        <button class="btn-topo" id="projetosButton" type="button">Projetos</button>
+        <button class="btn-topo" id="contatoButton" type="button">Contato</button>
+    </div>
 
-    <!-- Seção "Sobre Mim" com uma breve descrição pessoal e profissional -->
-     <id="sobre-mim">
-        <h2>Sobre Mim</h2>
-        <p>
-            Prazer, me chamo Gabriel Ladeia.
-            <br>
-            Atualmente estou focado em minha jornada para me tornar um desenvolvedor.
-            <br><br>
-            Sou estudante de Ciência da Computação, onde adquiri conhecimentos básicos em HTML, CSS, JavaScript, Java e outras competências. Possuo curso técnico de redes no Senac.
-            <br><br>
-            Busco oportunidades de estágio que me permitam aprimorar minhas habilidades de programação, fortalecer a resolução de problemas e participar de projetos inovadores. Com um ano de experiência como desenvolvedor backend, possuo proficiência em linguagens como PHP, Python e Java. Tenho facilidade de aprendizado e estou pronto para contribuir em projetos.
-        </p>
-    </id=>
-        BR
+    <<div class="container-centralizado" id="inicio">
+        <br>
+        <br><br><br><br>
+        <div class="centralizado">
+            <p class="bem-vindo">Bem-vindo ao meu portfólio!</p>
+        </div>
+        <div class="container">
+            <p>Eu sou <span class="texto-digitado"></span><span class="cursor">&nbsp;</span></p>
+        </div>
+        <img src="https://t3.ftcdn.net/jpg/04/86/60/44/360_F_486604480_EKKklldKqiwmvAunlEeF4QdI0dfjDojA.jpg" alt="Imagem de boas-vindas" class="imagem-centralizada">
+    </div>
 
-    <!-- Seção de Projetos com exemplos de projetos realizados -->
-    <id="projetos">
+    <div id="sobre-mim" style="display: none;">
+        <h1>Sobre mim</h1>
+        <p>Prazer, me chamo Gabriel Ladeia.</p>
+        <p>Atualmente estou focado em minha jornada para me tornar um desenvolvedor.</p>
+        <p>Sou estudante de Ciência da Computação, onde adquiri conhecimentos básicos em HTML, CSS, JavaScript, Java e outras competências.</p>
+        <p>Busco oportunidades de estágio que me permitam aprimorar minhas habilidades de programação, fortalecer a resolução de problemas e participar de projetos inovadores.</p>
+    </div>
+
+    <div id="projetos" style="display: none;">
         <h2>Projetos</h2>
-        <!-- Cada projeto tem um título e uma breve descrição -->
         <div class="projeto">
             <h3>Projeto 1</h3>
             <p>Descrição breve do projeto.</p>
@@ -42,37 +44,34 @@
             <h3>Projeto 2</h3>
             <p>Descrição breve do projeto.</p>
         </div>
-    </id=>
+    </div>
 
-    <!-- Seção de Contato com informações de contato e links para redes sociais -->
-    <id="contato">
+    <div id="contato" style="display: none;">
         <h2>Contato</h2>
         <p>Entre em contato comigo através de:</p>
         <ul>
-            <!-- Link de email com ícone do Gmail -->
             <li>
-                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNvvRNGRFSQMdGFqvjTcnWLGwJvDNFbgMRDNbSNSwCDwbDpKgnPtkNstmVMpwRDNnWLfcg" target="_blank" rel="noopener noreferrer">
-                    <img src="https://img.freepik.com/vetores-premium/icone-de-linha-de-vetor-minimo-do-gmail-no-botao-3d-isolado-em-fundo-preto-premium-vectorxaxa_570929-929.jpg" alt="Gmail Logo" style="width: 30px; height: 30px;">
+                <a href="https://mail.google.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM_jcB6Zzxj3_HCIZTmawh-W0yqyWmN4TIbQ&s" alt="Gmail Logo" style="width: 24px; height: 24px;">
                 </a>
             </li>
-            <!-- Link para o LinkedIn com ícone do LinkedIn -->
             <li>
-                <a href="https://www.linkedin.com/in/gabriel-b-422702132/" target="_blank" rel="noopener noreferrer">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn Logo" style="width: 30px; height: 30px;">
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://t.ctcdn.com.br/IwwDh-BajTE4ZwE4zuIcvz9Q2ZY=/i490027.jpeg" alt="LinkedIn Logo" style="width: 24px; height: 24px;">
                 </a>
             </li>
-            <!-- Link para o GitHub com ícone do GitHub -->
             <li>
-                <a href="https://github.com/gabriel-ladeia" target="_blank" rel="noopener noreferrer">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub Logo" style="width: 30px; height: 30px;">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://t4.ftcdn.net/jpg/06/09/34/39/360_F_609343994_YZvLlJSVHMLQ7H7S68QnbTQ85sYOqmln.jpg" alt="GitHub Logo" style="width: 24px; height: 24px;">
                 </a>
             </li>
         </ul>
-    </id=>
+    </div>
 
-    <!-- Rodapé com o copyright -->
     <footer>
         <p>&copy; 2024 Gabriel Ladeia.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
